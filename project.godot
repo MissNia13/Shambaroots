@@ -1,0 +1,28 @@
+; Shamba Roots - Season One
+; Godot 4.x / GDScript. Canon repo: MissNia13/Shambaroots
+
+config_version=5
+
+[application]
+
+config/name="Shamba Roots"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.3", "GDScript")
+
+[autoload]
+
+GameClock="*res://scripts/core/game_clock.gd"
+Wallet="*res://scripts/core/wallet.gd"
+Tea="*res://scripts/core/tea_stock.gd"
+Season="*res://scripts/core/season_state.gd"
+
+[display]
+
+window/size/viewport_width=1152
+window/size/viewport_height=648
+window/stretch/mode="canvas_items"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
