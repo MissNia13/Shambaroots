@@ -62,6 +62,24 @@ func sell(kg: float, now_day: int) -> float:
 	_emit()
 	return sold
 
+## Take only one freshness band out of stock. Market uses this so a fresh kg
+## is never quietly sold at stale money (or the reverse).
+func take_band(band: String, now_day: int) -> float:
+	var taken := 0.0
+	var kept: Array = []
+	for b in _batches:
+		var age := _age_days(b, now_day)
+		var is_fresh := age < 1
+		var is_stale := age == 1
+		var match_band := (band == "fresh" and is_fresh) or (band == "stale" and is_stale)
+		if match_band:
+			taken += float(b["kg"])
+		else:
+			kept.append(b)
+	_batches = kept
+	_emit()
+	return taken
+
 func clear_waste(now_day: int) -> float:
 	var cleared := 0.0
 	var kept: Array = []

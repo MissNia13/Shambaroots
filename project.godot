@@ -14,6 +14,7 @@ config/features=PackedStringArray("4.3", "GDScript")
 GameClock="*res://scripts/core/game_clock.gd"
 Wallet="*res://scripts/core/wallet.gd"
 Tea="*res://scripts/core/tea_stock.gd"
+Market="*res://scripts/core/market.gd"
 Season="*res://scripts/core/season_state.gd"
 
 [display]

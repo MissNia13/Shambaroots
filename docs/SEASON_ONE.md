@@ -17,6 +17,12 @@ No second wallet for convenience. If it costs, it comes out of the same place.
 Pick, carry, deliver. Leaf loses a quality band every day it is held.
 Spoiled leaf is waste and waste cannot be sold. Leaving costs you: a missed delivery, a lost lead.
 
+## The buyer
+One buyer at the Kapsean centre sets the price by freshness band: 45 KES/kg fresh,
+22 KES/kg stale, 0 for waste. No haggling in Season One. The clock is the only
+negotiation: what you carry overnight is worth half at dawn, and what waits two
+days is worth nothing.
+
 ## Training
 Training is a real game-state lock. It costs the hours it costs, and the world moves while you sit in it.
 Leaving mid-course loses what you paid and does not refund the time.

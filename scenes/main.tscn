@@ -55,6 +55,11 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "Tea  fresh 0.0 kg   stale 0.0 kg   waste 0.0 kg"
 
+[node name="Market" type="Label" parent="Panel/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Kapsean buyer"
+
 [node name="Log" type="Label" parent="Panel/VBox"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 16
